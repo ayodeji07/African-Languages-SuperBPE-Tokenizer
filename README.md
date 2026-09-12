@@ -1,6 +1,6 @@
 # SuperBPE Tokenizer for African LLMs — Team Kyoga
 
-A from-scratch SuperBPE tokenizer (Liu et al., 2025) for the "Bridging the Tokenization Gap in African LLMs" challenge, under a 20,000-token vocab cap. **Final result: 2nd place** (367,839 tokens on the 2M-character held-out corpus, 5.64s runtime).
+A from-scratch SuperBPE tokenizer (Liu et al., 2025) for the "Bridging the Tokenization Gap in African LLMs" challenge, under a 20,000-token vocab cap. Final submission: 367,839 tokens on the 2M-char held-out corpus, 5.64s runtime.
 
 ## Dataset
 
@@ -34,7 +34,7 @@ Checkpointing saves full trainer state, not just the merge list, so an interrupt
 
 ## Reproduction
 
-**Quick test** (seconds, stdlib only) — from `scripts/final_submission/`, the exact code/vocab that scored 2nd place:
+**Quick test** (seconds, stdlib only) — from `scripts/final_submission/`, the exact code/vocab from the final submission:
 ```python
 from tokenizer import Tokenizer
 ids = Tokenizer().encode(["your text here"])
